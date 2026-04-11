@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>30 Standard Library</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 25mm 20mm;
+            @bottom-center {
+                content: counter(page);
+                font-family: 'Inter', sans-serif;
+                font-size: 10pt;
+                color: #666;
+            }
+        }
+
+        body {
+            background-color: #fff;
+            color: #1a1a1a;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1, h2, h3 { 
+            color: #0088cc; 
+            font-family: 'Cinzel', serif; 
+            text-transform: uppercase;
+            page-break-after: avoid;
+        }
+        
+        h1 { 
+            border-bottom: 3px solid #0088cc; 
+            padding-bottom: 10px; 
+            margin-top: 40px;
+            font-size: 2.2em;
+        }
+
+        .technical-log {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-size: 0.8em;
+            background: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            white-space: pre-wrap;
+            color: #333;
+            overflow-x: hidden;
+            border-radius: 4px;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 0.9em;
+            page-break-inside: avoid;
+        }
+        th { background: #f0f0f0; text-align: left; padding: 10px; border: 1px solid #ccc; }
+        td { padding: 8px; border: 1px solid #eee; }
+
+        .nav-link {
+            display: block;
+            margin-bottom: 40px;
+            color: #0088cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .nav-link { display: none; }
+        }
+
+        .footer {
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="nav-link">← Back to Master Index</a>
+    <div class="content">
+        <h1>Chapter 30: Aevov-Lang v2.0 Standard Library</h1>
+<h2>The Programming Interface for Reality</h2>
+<h3>30.1. Namespace: AUF.Core.Resonance</h3>
+<p>The standard library (std-res) provides the high-level abstractions for interacting with the Φ-field. It bypasses the need for manual phase-alignment by providing pre-calculated <b>Resonant Patches</b>.</p>
+<p><b>Core Modules</b>:</p>
+<p>- <code>Resonance.Manifest</code>: Functions for materializing informational patterns.</p>
+<p>- <code>Resonance.Phase</code>: Vector math for address manipulation.</p>
+<p>- <code>Resonance.Biological</code>: Biophoton sync and somatic monitoring.</p>
+<p>- <code>Resonance.Security</code>: Phase-seclusion and encryption.</p>
+<h3>30.2. High-Level API Sample</h3>
+<p><code></code>`aevov</p>
+<p>import AUF.Core.Resonance;</p>
+<p>void main() {</p>
+<p>// Phase-lock the local node</p>
+<p>Phase.Lock(Precision.High);</p>
+<p>// Manifest a gold ingot (Pattern: AU/79)</p>
+<p>Pattern gold = Source.Index("metal.noble.gold");</p>
+<p>Manifest.Realize(gold, Weight.Grams(100), Parity.Level4);</p>
+<p>// Status report</p>
+<p>Resonance.PrintStatus();</p>
+<p>}</p>
+<p><code></code>`</p>
+<h3>30.3. Compiler Optimization</h3>
+<p>The Aevov compiler performs <b>Phase-Collapsing</b>. It identifies redundant intentional vectors and simplifies them into a single coherent pulse, reducing the "Intentional Pressure" on the AURA core.</p>
+<p>---</p>
+<p>*Volume II Expansion: 800+ Pages of Standard Library Documentation in Archive F.*</p>
+    </div>
+    <div class="footer">
+        30 Standard Library | Babatope Jesse Afolabi | 1.0.0-FINAL-EXPORT
+    </div>
+</body>
+</html>

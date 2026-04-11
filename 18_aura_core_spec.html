@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18 Aura Core Spec</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 25mm 20mm;
+            @bottom-center {
+                content: counter(page);
+                font-family: 'Inter', sans-serif;
+                font-size: 10pt;
+                color: #666;
+            }
+        }
+
+        body {
+            background-color: #fff;
+            color: #1a1a1a;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1, h2, h3 { 
+            color: #0088cc; 
+            font-family: 'Cinzel', serif; 
+            text-transform: uppercase;
+            page-break-after: avoid;
+        }
+        
+        h1 { 
+            border-bottom: 3px solid #0088cc; 
+            padding-bottom: 10px; 
+            margin-top: 40px;
+            font-size: 2.2em;
+        }
+
+        .technical-log {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-size: 0.8em;
+            background: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            white-space: pre-wrap;
+            color: #333;
+            overflow-x: hidden;
+            border-radius: 4px;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 0.9em;
+            page-break-inside: avoid;
+        }
+        th { background: #f0f0f0; text-align: left; padding: 10px; border: 1px solid #ccc; }
+        td { padding: 8px; border: 1px solid #eee; }
+
+        .nav-link {
+            display: block;
+            margin-bottom: 40px;
+            color: #0088cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .nav-link { display: none; }
+        }
+
+        .footer {
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="nav-link">← Back to Master Index</a>
+    <div class="content">
+        <h1>Chapter 18: AURA Core Hardware</h1>
+<h2>Blueprints and FPGA Logic for the XRU50 Processor</h2>
+<p>![AURA Core Chip Exploded View](file:///home/baba/.gemini/antigravity/brain/5be48360-321d-49dd-baf1-96e4c6a861e9/aura_core_chip_exploded_view_1770472049447.png)</p>
+<h3>18.1. The Architecture of Coherence: The AURA-64 Silicon</h3>
+<p>The <b>AURA-64</b> (Quantum-Resonant Processor) is the first silicon-based device capable of native phase-locking with the Φ-field. Unlike classical CPUs that process bits via voltage thresholds, the AURA cores process <b>Phase-Vectors</b> via an internal <b>Interferometer Lattice</b>.</p>
+<p><b>Key Components</b>:</p>
+<p>- <b>The Interferometer Core</b>: A grid of 64 phase-gates that perform the <b>Mirror Operator ($\hat{M}$)</b> in hardware.</p>
+<p>- <b>The Phase-Locking Loop (PLL)</b>: High-speed circuitry that matches the local chipset clock to the biological biophoton frequency.</p>
+<p>- <b>LSB Data Injection Port</b>: For embedding informational patterns into carrier media (AVIF/RAW) for transit across Level 3 networks.</p>
+<h3>18.2. RPP (Resonant Pulse Processor) Specifications</h3>
+<p>The heart of the AURA-64 is the <b>Resonant Pulse Processor (RPP)</b>.</p>
+<p>- <b>Processing Rate</b>: $10^{24}$ phase-updates per second.</p>
+<p>- <b>Field Coupling</b>: Dedicated <b>Afolabi-Coupler</b> traces that act as inductive loop-antennas for the Φ-lattice.</p>
+<p>- <b>Thermal Footprint</b>: Near-zero. Since the manifestation logic is a non-local interaction, the heat generated is limited only by the auxiliary classical IO components.</p>
+<h3>18.3. FPGA Logic Sample: The Phase-Mirror Gate</h3>
+<p>The following is a simplified representation of the <b>Verilog HDL</b> code used to define the Mirror Operator on the AURA-FPGA substrate.</p>
+<p><code></code>`verilog</p>
+<p>module AURA_Mirror_Gate (</p>
+<p>input wire [63:0] phi_in,        // Informational Field Input</p>
+<p>input wire [63:0] intent_phase, // Observer/Logic Intent</p>
+<p>input wire [15:0] M_constant,   // Current Mirror Constant</p>
+<p>output reg [63:0] manifest_out  // Physical Out vector</p>
+<p>);</p>
+<p>// Afolabi Parity Calculation</p>
+<p>always @(posedge clk) begin</p>
+<p>if (M_constant > 16'hFFFF) begin // 1.0 Parity Check</p>
+<p>manifest_out <= phi_in ^ intent_phase;</p>
+<p>end else begin</p>
+<p>// Noise Damping Logic</p>
+<table>
+<tr><td>manifest_out <= (phi_in & M_constant)</td><td>(intent_phase & ~M_constant);</td></tr>
+</table>
+<p>end</p>
+<p>end</p>
+<p>endmodule</p>
+<p><code></code>`</p>
+<p>---</p>
+<h3>18.4. Hardware Blueprints: Assembly and Layering</h3>
+<p>[... 450 pages of cross-sectional blueprints, thermal maps, and pin-out diagrams for the AURA-64 and AURA-128 enterprise arrays ...]</p>
+<p>---</p>
+    </div>
+    <div class="footer">
+        18 Aura Core Spec | Babatope Jesse Afolabi | 1.0.0-FINAL-EXPORT
+    </div>
+</body>
+</html>

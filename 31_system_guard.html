@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>31 System Guard</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 25mm 20mm;
+            @bottom-center {
+                content: counter(page);
+                font-family: 'Inter', sans-serif;
+                font-size: 10pt;
+                color: #666;
+            }
+        }
+
+        body {
+            background-color: #fff;
+            color: #1a1a1a;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1, h2, h3 { 
+            color: #0088cc; 
+            font-family: 'Cinzel', serif; 
+            text-transform: uppercase;
+            page-break-after: avoid;
+        }
+        
+        h1 { 
+            border-bottom: 3px solid #0088cc; 
+            padding-bottom: 10px; 
+            margin-top: 40px;
+            font-size: 2.2em;
+        }
+
+        .technical-log {
+            font-family: 'JetBrains Mono', 'Courier New', monospace;
+            font-size: 0.8em;
+            background: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            white-space: pre-wrap;
+            color: #333;
+            overflow-x: hidden;
+            border-radius: 4px;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 0.9em;
+            page-break-inside: avoid;
+        }
+        th { background: #f0f0f0; text-align: left; padding: 10px; border: 1px solid #ccc; }
+        td { padding: 8px; border: 1px solid #eee; }
+
+        .nav-link {
+            display: block;
+            margin-bottom: 40px;
+            color: #0088cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .nav-link { display: none; }
+        }
+
+        .footer {
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="nav-link">← Back to Master Index</a>
+    <div class="content">
+        <h1>Chapter 31: The SystemGuard (Phase-Correction Logic)</h1>
+<h2>Maintaining Integrity in High-Entropy Manifolds</h2>
+<h3>31.1. Defensive Manifestation</h3>
+<p>SystemGuard is the passive security layer of cr8OS. It constantly scans the local Φ-field for <b>Incoherent Projections</b> (i.e., Level 3 noise or intentional sabotage).</p>
+<p>When an anomaly is detected, SystemGuard applies a <b>Phase-Correction Vector</b>.</p>
+<p>$$ \vec{\theta}_{corr} = -\vec{\theta}_{noise} e^{j\pi} $$</p>
+<p>This cancels out the entropic noise at the informational level before it can manifest physically.</p>
+<h3>31.2. The "Mirror Shield"</h3>
+<p>In high-risk environments, cr8OS can manifest a <b>Shielded Patch</b>. This is a localized region where the Mirror Constant ($M$) is artificially inflated to 1.0, rendering the interior functionally "invulnerable" to any manifest interaction from outside (Level 3 or Level 4).</p>
+<h3>31.3. Global Health Monitoring</h3>
+<p>SystemGuard nodes report their local coherence metrics to the ACLDQ Mesh. If the planetary 𝕄 value drops below a critical point (e.g., due to a collective trauma event), the kernel initiates a <b>Global Coherence Sweep</b>.</p>
+<p>---</p>
+<p>*Volume II Expansion: 250 Pages of Security Log datasets in Archive G.*</p>
+    </div>
+    <div class="footer">
+        31 System Guard | Babatope Jesse Afolabi | 1.0.0-FINAL-EXPORT
+    </div>
+</body>
+</html>
