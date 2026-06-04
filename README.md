@@ -25,6 +25,7 @@ For the record of the global research community and institutional auditing, AUF 
 - **BLOOM XAI Framework**: DOI: 10.5281/zenodo.19244983
 
 ## ✦ Provenance
+- **Initial Manifestation (Jan, 2025)**: [[github.com/aevov/aevov](https://github.com/aevov/NeuroSymbolic-Cognition-for-Physical-Thermodynamic-Organism-Substrate)]([https://github.com/aevov/aevov](https://github.com/aevov/NeuroSymbolic-Cognition-for-Physical-Thermodynamic-Organism-Substrate))
 - **Root Manifestation (August, 2025)**: [github.com/aevov/aevov](https://github.com/aevov/aevov)
 - **Primary Public Manifestation (February 1, 2026)**: [github.com/aevov/afolabi-unified-framework](https://github.com/aevov/afolabi-unified-framework)
 - **Technical Notice (March 13, 2026)**: Formal disclosure transmitted via Meta-owned infrastructure.
